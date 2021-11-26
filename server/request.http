@@ -1,0 +1,55 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "yasuo",
+    "password": "yasuo"
+}
+###
+
+POST http://localhost:5000/api/auth/login   
+Content-Type: application/json
+
+{
+    "username": "yasuo",
+    "password": "yasuo"
+}
+
+### write a post
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTliNjMwNjJlNzJjYWJkYzY3M2VhOWYiLCJpYXQiOjE2Mzc4Mzc4NDV9.YYa7fpHs7luYOtxnOe6EiTV5Np30vDhd5lfFQ2Pa0ns
+
+{
+    "title": "Learn HTML CSS Javascript",
+    "description": "hahasd asda medasdasrn hahaha hahahah hahshdhasd  hasd asdas ",
+    "url":"instagram.com",
+    "status": "TO LEARN"
+}
+
+
+###get all post
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTliNjMwNjJlNzJjYWJkYzY3M2VhOWYiLCJpYXQiOjE2Mzc2NTc4ODV9.rg81WmvlMW0DwO4pL7cJd3f9QrBGFL2zMZj_gX-Lxms
+
+
+###update post
+
+POST http://localhost:5000/api/posts/619cb2489366b482eef907fb
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTliNjMwNjJlNzJjYWJkYzY3M2VhOWYiLCJpYXQiOjE2Mzc2NTc4ODV9.rg81WmvlMW0DwO4pL7cJd3f9QrBGFL2zMZj_gX-Lxms
+
+{
+    "title": "Vueeeeeeee",
+    "description": "ez vcl",
+    "url": "https://vuejs.org",
+    "status": "LEARNING"
+}
+
+
+###get all post
+
+DELETE http://localhost:5000/api/posts/619cb2489366b482eef907fb
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTliNjMwNjJlNzJjYWJkYzY3M2VhOWYiLCJpYXQiOjE2Mzc2NTc4ODV9.rg81WmvlMW0DwO4pL7cJd3f9QrBGFL2zMZj_gX-Lxms
