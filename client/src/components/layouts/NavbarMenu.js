@@ -1,6 +1,6 @@
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import takudoLogo from "../../assets/takudoLogo.svg";
+import Logo from "../../assets/MyLogo.svg";
 import logoutIcon from "../../assets/logout.svg";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
@@ -22,7 +22,7 @@ const NavbarMenu = () => {
       <Container>
         <Navbar.Brand className="font-weight-bolder text-white">
           <img
-            src={takudoLogo}
+            src={Logo}
             alt="learnItLogo"
             width="128"
             height="64"

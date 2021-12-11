@@ -45,11 +45,11 @@ const DashBoard = () => {
         <Card className="text-center mx-5 my-5">
           <Card.Header as="h1">Hi {username}</Card.Header>
           <Card.Body>
-            <Card.Title>Welcome to Learn IT</Card.Title>
+            <Card.Title>Welcome to Todos</Card.Title>
             <Card.Text>
               Click button below to track your first skill to learn
             </Card.Text>
-            <Button variant="primary" onClick={setShowAddPostModal.bind(this,true)}>Let's go!</Button>
+            <Button variant="primary" onClick={setShowAddPostModal.bind(this,true)}>Let's get start!</Button>
           </Card.Body>
         </Card>
       </>
